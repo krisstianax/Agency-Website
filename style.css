@@ -1,0 +1,323 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --size-1:0.25rem;
+  --size-2:0.5rem;
+  --size-3:0.75rem;
+  --size-4:1rem;
+  --size-5:1.25rem;
+  --size-6:1.5rem;
+  --size-7:1.75rem;
+  --size-8:2rem;
+  --size-9:2.25rem;
+  --size-10:2.5rem;
+  --size-11:2.75rem;
+  --size-12:3rem;
+  --size-13:3.25rem;
+  --size-14:3.5rem;
+  --size-15:3.75rem;
+  --size-16:4rem;
+  --size-17:4.25rem;
+  --size-18:4.5rem;
+  --size-19:4.75rem;
+  --size-20:5rem;
+  --size-21:5.25rem;
+  --size-22:5.5rem;
+  --size-23:5.75rem;
+  --size-24:6rem;
+  --color-black:#263238;
+  --color-d_grey:#4D4D4D;
+  --color-grey:#717171;
+  --color-l_grey: #89939E;
+  --color-grey_blue:#ABBED1;
+  --color-silver:#F5F7FA;
+  --color-white:#fff;
+  --color-green:#43A046;
+  --color-l_dark:#263238;
+  --color-blue:#2194f3;
+} 
+header {
+  padding: var(--size-4) var(--size-4);
+  max-width: 1600px;
+  margin: auto;
+}
+header .logo {
+  position: absolute;
+  left: 16px;
+  top: 31px;
+  cursor: pointer;
+}
+header nav {
+  display: none;
+}
+header .flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: var(--size-4);
+  align-items: center;
+}
+header .flex .btn-type-2 {
+  all: unset;
+  padding: var(--size-4) var(--size-8);
+  font-weight: 500;
+  font-size: var(--size-3);
+  color: var(--color-white);
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: var(--color-green);
+}
+header .flex .menu {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+header .flex .menu .nav {
+  background-color: var(--color-black);
+  height: 2px;
+  width: 20px;
+}
+
+@media all and (min-width: 768px) {
+  header {
+    display: flex;
+    gap: var(--size-12);
+    justify-content: flex-end;
+    align-items: center;
+  }
+  header .logo {
+    left: 200px;
+  }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-4);
+  }
+  header nav .list {
+    all: unset;
+    color: var(--color-d_grey);
+    font-size: var(--size-4);
+  }
+  header .flex .btn-type-2 {
+    text-align: center;
+    font-size: var(--size-4);
+    padding: var(--size-4) var(--size-10);
+  }
+  header .menu .nav {
+    display: none;
+  }
+}
+.wrapper {
+  max-width: 1600px;
+  margin: auto;
+}
+
+.heading-1 {
+  padding-bottom: var(--size-6);
+  color: var(--color-d_grey);
+  font-size: var(--size-12);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.heading-1 .heading-detail {
+  color: var(--color-green);
+}
+
+.heading-2 {
+  padding-bottom: var(--size-6);
+  color: var(--color-d_grey);
+  font-size: var(--size-10);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.heading-3 {
+  padding-bottom: var(--size-6);
+  color: var(--color-d_grey);
+  font-size: var(--size-9);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.description {
+  padding-bottom: var(--size-6);
+  color: var(--color-grey);
+}
+
+.btn-type-1 {
+  all: unset;
+  margin: 0 auto var(--size-6) auto;
+  display: block;
+  padding: var(--size-4) var(--size-8);
+  background-color: var(--color-green);
+  color: var(--color-white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#heropage {
+  text-align: center;
+  padding: var(--size-12) var(--size-4);
+  background-color: var(--color-silver);
+}
+
+@media all and (min-width: 1100px) {
+  #heropage .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+  }
+  #heropage .wrapper .content {
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+  }
+  #heropage .wrapper .content .heading-1 {
+    font-size: var(--size-20);
+    padding: var(--size-20) 0 var(--size-8) 0;
+  }
+  #heropage .wrapper .content .description {
+    font-size: var(--size-6);
+    padding-bottom: var(--size-12);
+  }
+  #heropage .wrapper .content .btn-type-1 {
+    font-size: var(--size-6);
+    margin: 0;
+    margin-bottom: var(--size-24);
+  }
+  #heropage .wrapper .img-heropage {
+    width: 400px;
+    height: 400px;
+    align-self: center;
+  }
+}
+#client {
+  text-align: center;
+  padding: var(--size-12) var(--size-4);
+}
+#client .img-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+@media all and (min-width: 1100px) {
+  .heading-2 {
+    font-size: var(--size-12);
+  }
+  .description {
+    font-size: var(--size-6);
+    padding-bottom: var(--size-12);
+  }
+  .img-grid .img-logo {
+    width: 50px;
+    height: auto;
+  }
+}
+#community {
+  text-align: center;
+  padding: var(--size-12) var(--size-4);
+}
+#community .article_Grid .article {
+  max-width: 350px;
+  margin: auto;
+  padding-bottom: var(--size-8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#community .article_Grid .article .icon {
+  width: 70px;
+  padding-bottom: var(--size-4);
+}
+#community .article_Grid .article .info {
+  color: var(--color-grey);
+}
+
+@media all and (min-width: 1100px) {
+  .heading-3 {
+    font-size: var(--size-12);
+  }
+  .description {
+    font-size: var(--size-6);
+    padding-bottom: var(--size-12);
+  }
+  .article_Grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .article_Grid .info {
+    font-size: var(--size-5);
+  }
+}
+@font-face {
+  font-family: Inter;
+  src: url(font/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  font-family: Inter;
+}/*# sourceMappingURL=style.css.map */

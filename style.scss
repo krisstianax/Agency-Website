@@ -1,0 +1,30 @@
+@forward 'reset.css';
+@forward './modules/_variables';
+@forward "./modules/_header";
+@forward "./modules/_heropage";
+@forward './modules/_client';
+@forward './modules/community';
+// @forward "./modules/_pixelgrade";
+// @forward "./modules/_localBusiness";
+@forward "./modules/global.scss";
+
+
+
+@font-face {
+    font-family: Inter;
+    src: url(font/Inter/Inter-VariableFont_slnt\,wght.ttf);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    width: 100vw;
+  }
+
+  body {
+    margin: 0;
+    font-family: Inter;
+  }
+
