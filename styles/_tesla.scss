@@ -1,0 +1,46 @@
+#tesla{
+text-align: center;
+padding: var(--size-12) var(--size-4);
+background-color: var(--color-silver);
+
+.teslaBody{
+    max-width: 1600px;
+    margin: auto;
+    .content{
+    .title{
+        color: var(--color-green);
+        .littleTitle{
+            display: block;
+            font-size: var(--size-4);
+            color: var(--color-l_grey);
+            font-weight: 400;
+        }
+    }
+    .logosGrid{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    justify-items: center;
+    align-items: center;
+}
+    }
+}
+}
+@media all and (min-width:1100px){
+    #tesla{
+        .teslaBody{
+            .img-tesla{
+                width: 90%;
+            }
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            align-items: stretch;
+            justify-items: start;
+            .content{
+                text-align: left;
+                display: grid;
+                align-content: center;
+                gap: var(--size-8);
+            }
+        }
+    }
+}

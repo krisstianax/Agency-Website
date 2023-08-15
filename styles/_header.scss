@@ -11,14 +11,15 @@ header{
     nav{
         display: none;
     }
-    .flex{
+    .btnContent{
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         gap:var(--size-4);
         align-items: center;
 
-        .btn-type-2{
+        .btn{
+        &.btnSecondary{
             all:unset;
             padding: var(--size-4) var(--size-8);
             font-weight: 500;
@@ -28,15 +29,36 @@ header{
             cursor: pointer;
             border-radius: 5px;
             background-color: var(--color-green);
+            .arrow{
+                position: relative;
+                display: inline-block;
+                width: 20px;
+                left:5px;
+                bottom:4px;
+                height: 4px;
+                background-color: var(--color-white);
+                &::after{
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    right: 0px;
+                    top: -4px;
+                    border: solid var(--color-white);
+                    border-width: 0 3px 3px 0;
+                    padding: 4px;
+                    transform: rotate(-45deg);
+            }
+                }
 
         }
-        .menu{
+    }
+        .burgerMenu{
             margin:0;
             display: flex;
             flex-direction: column;
             gap: 3px; 
 
-        .nav{
+        .burgerNav{
             background-color: var(--color-black);
             height: 2px;
             width: 20px;
@@ -51,7 +73,7 @@ header{
         justify-content: flex-end;
         align-items: center;
         .logo{
-        left: 200px;
+        left: 50px;
         }
         nav{
             display: flex;
@@ -63,17 +85,26 @@ header{
                 font-size: var(--size-4);
             }
         }
-            .flex{
-                .btn-type-2{
+            .btnContent{
+                .btn{
+                &.btnSecondary{
                     text-align: center;
                     font-size: var(--size-4);
                     padding: var(--size-4) var(--size-10);
                 }
             }
-            .menu{     
-                .nav{
+            }
+            .burgerMenu{     
+                .burgerNav{
                     display: none;
                     }
             }
         }
+}
+@media all and (min-width:1100px){
+    header{
+        .logo{
+            left: 150px;
+        }
+    }
 }

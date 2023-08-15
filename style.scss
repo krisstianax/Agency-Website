@@ -1,12 +1,19 @@
 @forward 'reset.css';
-@forward './modules/_variables';
-@forward "./modules/_header";
-@forward "./modules/_heropage";
-@forward './modules/_client';
-@forward './modules/community';
-// @forward "./modules/_pixelgrade";
-// @forward "./modules/_localBusiness";
-@forward "./modules/global.scss";
+@forward './styles/color-variables';
+@forward './styles/typography';
+// @forward "./styles/_global";
+@forward "./styles/_header";
+@forward "./styles/_heropage";
+@forward './styles/_client';
+@forward './styles/community';
+@forward "./styles/_pixelgrade";
+@forward "./styles/_localBusiness";
+@forward "./styles/_design";
+@forward "./styles/_tesla";
+@forward "./styles/_caring";
+@forward "./styles/_demo";
+@forward "./styles/footer";
+
 
 
 

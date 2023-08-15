@@ -1,0 +1,39 @@
+#design{
+    text-align: center;
+    padding: var(--size-12) var(--size-4);
+}
+@media all and (min-width:1100px){
+    #design{
+        .designBody{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            justify-items: center;
+            .img-woman{
+                width: 400px;
+                height: 400px;
+                align-self: center;
+            }
+            .content{
+                max-width:900px;
+                margin: auto;
+                text-align: left;
+                .title{
+                    font-size: var(--size-12);
+                    padding:var(--size-20) 0 var(--size-8) 0;
+                }
+                .description{
+                    font-size: var(--size-5);
+                    padding-bottom: var(--size-12);
+                    text-align: left;
+                }
+                .btn{
+                &.btnPrimary{
+                    font-size: var(--size-6);
+                    margin: 0;
+                    margin-bottom: var(--size-24);
+                }
+            }
+            }
+        }
+    }
+    }
