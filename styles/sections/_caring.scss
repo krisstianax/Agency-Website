@@ -8,6 +8,7 @@
                 width: 80%;
             }
             .boxText{
+
                 padding: var(--size-4);
                 background-color: var(--color-silver);
                 max-width: 70%;
@@ -33,14 +34,18 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 .box{
+                    display: inline;
                     .img-caringSectionGrid{
                         z-index: 0;
                         width: 90%;
                     }
                     .boxText{
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 2;
                         padding: var(--size-4);
                         background-color: var(--color-silver);
-                        display: grid;
+                        // display: grid;
                         
                         max-width: 80%;
                         margin: auto;

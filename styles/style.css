@@ -64,6 +64,10 @@ table {
   --color-l_dark:#263238;
   --color-blue:#2194f3;
 } 
+@font-face {
+  font-family: Inter;
+  src: url(font/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
 :root {
   --size-1:0.25rem;
   --size-2:0.5rem;
@@ -575,14 +579,19 @@ header .btnContent .burgerMenu .burgerNav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  #caring .caringBody .imgsGrid .box {
+    display: inline;
+  }
   #caring .caringBody .imgsGrid .box .img-caringSectionGrid {
     z-index: 0;
     width: 90%;
   }
   #caring .caringBody .imgsGrid .box .boxText {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
     padding: var(--size-4);
     background-color: var(--color-silver);
-    display: grid;
     max-width: 80%;
     margin: auto;
     border-radius: 30px;
@@ -680,19 +689,18 @@ footer .footerBody .contact .email .arrowSend {
     justify-content: space-around;
     align-items: baseline;
   }
-  footer .footerBody .rights, footer .footerBody .title, footer .footerBody .list {
+  footer .footerBody .rights,
+  footer .footerBody .title,
+  footer .footerBody .list {
     text-align: left;
   }
-  footer .footerBody .list, footer .footerBody .email {
+  footer .footerBody .list,
+  footer .footerBody .email {
     font-size: var(--size-5);
   }
   footer .footerBody .email {
     padding: var(--size-4) var(--size-8);
   }
-}
-@font-face {
-  font-family: Inter;
-  src: url(font/Inter/Inter-VariableFont_slnt\,wght.ttf);
 }
 * {
   box-sizing: border-box;

@@ -1,0 +1,29 @@
+@forward './reset.scss';
+@forward './variables/color-variables';
+@forward './variables/typography';
+@forward "./sections/header";
+@forward "./sections/_heropage";
+@forward './sections/_client';
+@forward './sections/_community';
+@forward "./sections/_pixelgrade";
+@forward "./sections/_localBusiness";
+@forward "./sections/_design";
+@forward "./sections/_tesla";
+@forward "./sections/_caring";
+@forward "./sections/_demo";
+@forward "./sections/_footer";
+
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    width: 100vw;
+  }
+
+  body {
+    margin: 0;
+    font-family: Inter;
+  }
+
